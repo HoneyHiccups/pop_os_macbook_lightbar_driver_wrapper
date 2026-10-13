@@ -1,0 +1,1 @@
+g++ -o light_bar_sens lightbartouchsensor.cpp
