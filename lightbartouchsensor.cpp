@@ -42,10 +42,9 @@ brightness_state State;
 
             //here we will scan for event and set state
             //read vals
-            read_brightness();
             State = brightness_state::nothing;
             int key_code = wait_for_brightness_press(event_stream,State);
-
+            read_brightness();
 
             if(State == brightness_state::up){
                 ajust_brightnes(25);
